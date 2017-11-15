@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.johnd.rockpaperscissors.MainActivity">
+
+    <TextView
+        android:id="@+id/introduction"
+        android:layout_width="180dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/Select_hand"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.158"
+        tools:text="@string/Select_hand" />
+
+    <Button
+        android:id="@+id/rock"
+        android:layout_width="110dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onRockButtonCLicked"
+        android:text="@string/rock_button"
+        app:layout_constraintBottom_toTopOf="@+id/paper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/introduction" />
+
+    <Button
+        android:id="@+id/paper"
+        android:layout_width="104dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="onPaperButtonClicked"
+        android:text="@string/paper_button"
+        app:layout_constraintBottom_toTopOf="@+id/scissors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/scissors"
+        android:layout_width="101dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="84dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="onScissorsButtonClicked"
+        android:text="@string/scissors_buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
