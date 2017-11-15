@@ -6,22 +6,23 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
     RockPaperScissorsGame game;
-    Button rock;
-    Button paper;
-    Button scissors;
+    ImageButton rock;
+    ImageButton paper;
+    ImageButton scissors;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        rock = (Button)findViewById(R.id.rock);
-        paper = (Button)findViewById(R.id.paper);
-        scissors = (Button)findViewById(R.id.scissors);
+        rock = findViewById(R.id.rock);
+        paper = findViewById(R.id.paper);
+        scissors = findViewById(R.id.scissors);
         game = new RockPaperScissorsGame();
 
     }
