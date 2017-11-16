@@ -8,4 +8,9 @@
     <string name="computer_choice">Computer chose</string>
     <string name="result">And the winner is...</string>
     <string name="returnButton">Play Again</string>
+    <string name="about">about</string>
+    <string name="settings">score</string>
+    <string name="display_wins" />
+    <string name="dispplay_losses" />
+    <string name="display_losses" />
 </resources>

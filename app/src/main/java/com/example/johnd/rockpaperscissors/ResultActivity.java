@@ -36,8 +36,11 @@ public class ResultActivity extends AppCompatActivity {
     }
 
     public void onPlayAgainButtonClicked(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        finish();
+//        Intent intent = new Intent(this, MainActivity.class);
+//        startActivity(intent);
+
+        // creating a new intent here was wiping the date from the previous intent! this is why we used the finish.
     }
 
 

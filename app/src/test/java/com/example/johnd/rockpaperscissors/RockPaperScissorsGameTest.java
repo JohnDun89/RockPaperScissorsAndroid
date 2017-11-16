@@ -46,4 +46,19 @@ public class RockPaperScissorsGameTest {
         assertEquals("You lose!", actual);
     }
 
+//    @Test
+//    public void returnNumberOfWins(){
+//        String actual = game.gameLogic(Hand.ROCK,Hand.SCISSORS);
+//        assertEquals(1,game.returnNumberOfWinds(),0.1);
+//
+//    }
+//
+//    @Test
+//    public void returnNuberOfLosses(){
+//        game.gameLogic(Hand.ROCK, Hand.PAPER);
+//        game.gameLogic(Hand.ROCK, Hand.PAPER);
+//        assertEquals(2,game.returnNumberOfLosses(),0.1);
+//    }
+
+
 }
